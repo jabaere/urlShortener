@@ -1,0 +1,61 @@
+
+
+
+html, body {
+  background: white;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.bar {
+  position: relative;
+  height: 2px;
+  width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: 150px;
+}
+
+.circle {
+  position: absolute;
+  top: -30px;
+  margin-left: -50px;
+  height: 65px;
+  width: 65px;
+  left: 0;
+  background: #f50057;
+  border-radius: 30%;
+  -webkit-animation: move 5s infinite;
+}
+
+.pdd {
+  position: absolute;
+  top: -35px;
+  right: -85px;
+  color: white;
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .bar {
+    width: 200px;
+  };
+  .pdd{
+    right: -55px;
+  }
+}
+
+@keyframes move {
+  0% {left: 0;}
+  50% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+  75% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+  100% {right: 100%;}
+} 
+
+
+
+
+
+
